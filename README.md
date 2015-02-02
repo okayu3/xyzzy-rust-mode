@@ -4,13 +4,14 @@ A major mode of Rust programming language for xyzzy editor(another emacsen edito
 プログラミング言語Rust用の xyzzy向け major mode です。
 これを作った段階では(2015/01) Rustは v1.0.0 α です。まだ本体がαバージョンであることにご留意ください。
 
-キーワードのハイライト。
-インデントはC-modeのものをそのまま使う感じ。
-C-c c で cargo管理してたら cargo build --release を、
+-[x] キーワードのハイライト。
+-[ ] インデントはC-modeのものをそのまま使う感じ。
+-[x] C-c c で cargo管理してたら cargo build --release を、<br />
         cargo管理してなさそうなら rustc -C opt-level=1 を。
-C-c x で cargo run --release だったり ファイル名.exe を起動したり。
+-[x] C-c x で cargo run --release だったり ファイル名.exe を起動したり。
 
 使い方：一例ですが、
+'''
 (load-library "rust-mode")
 (push '("\\.rs$" . rust-mode) *auto-mode-alist*)
 (add-hook 'ed::*rust-mode-hook*
@@ -24,7 +25,7 @@ C-c x で cargo run --release だったり ファイル名.exe を起動した�
               (define-key ed::*rust-mode-map* #\S-F8 'rust-run)
               )
           )
-
-こんな感じ。
-ac-modeもそのまま使えます。
-TAG系は特になにもやってません。
+'''
+こんな感じ。<br />
+ac-modeもそのまま使えます。<br />
+TAG系は特になにもやってません。<br />
