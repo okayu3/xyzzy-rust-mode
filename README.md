@@ -1,5 +1,5 @@
 # xyzzy-rust-mode
-A major mode of Rust programming language for xyzzy editor(another emacsen editor)
+A major mode for Rust programming language of xyzzy editor(another emacsen editor)
 
 プログラミング言語Rust用の xyzzy向け major mode です。
 これを作った段階では(2015/01) Rustは v1.0.0 α です。まだ本体がαバージョンであることにご留意ください。
