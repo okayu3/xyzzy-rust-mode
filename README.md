@@ -10,7 +10,10 @@ A major mode of Rust programming language for xyzzy editor(another emacsen edito
         cargo管理してなさそうなら rustc -C opt-level=1 を。
 - [x] C-c x で cargo run --release だったり ファイル名.exe を起動したり。
 
-使い方：一例ですが、
+使い方：
+* いつも通り、site-lisp に rust-mode.l を置きます。
+* etcフォルダに Rust を置きます。
+* あとは .xyzzy なり site-lisp.l なりで呼び出します。一例ですが、
 ```
 (load-library "rust-mode")
 (push '("\\.rs$" . rust-mode) *auto-mode-alist*)
