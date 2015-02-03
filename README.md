@@ -13,7 +13,7 @@ A major mode for Rust programming language of xyzzy editor(another emacsen edito
 使い方：
 * いつも通り、site-lisp に rust-mode.l を置きます。
 * etcフォルダに Rust を置きます。
-* あとは .xyzzy なり site-lisp.l なりで呼び出します。一例ですが、
+* あとは .xyzzy なり siteinit.l なりで呼び出します。一例ですが、
 ```
 (load-library "rust-mode")
 (push '("\\.rs$" . rust-mode) *auto-mode-alist*)
